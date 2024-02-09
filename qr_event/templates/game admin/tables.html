@@ -1,0 +1,73 @@
+{% extends "layouts/base-admin.html" %} {% block title %} Tables {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %} {% block content %}
+
+<div class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Player Progress</h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table tablesorter" id="">
+              <thead class="text-primary">
+                <tr>
+                  <th>Name</th>
+                  <th class="text-center">QR Collected</th>
+                  <th class="text-center">QR Left</th>
+                  <th class="text-center">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>qwe</td>
+                  <td class="text-center">10</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">XX-XX-XXXX</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="card card-plain">
+        <div class="card-header">
+          <h4 class="card-title">Table on Plain Background</h4>
+          <p class="category">Here is a subtitle for this table</p>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table tablesorter" id="">
+              <thead class="text-primary">
+                <tr>
+                  <th>Name</th>
+                  <th class="text-center">QR Collected</th>
+                  <th class="text-center">QR Left</th>
+                  <th class="text-center">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>qwe</td>
+                  <td class="text-center">10</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">XX-XX-XXXX</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
