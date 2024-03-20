@@ -5,5 +5,6 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.setup, name='setup'),
-    path('qr', views.details, name = 'details')
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    # path('qr', views.details, name = 'details')
+    path('qr/<slug:ev_id>', views.details, name ='details')
+] 

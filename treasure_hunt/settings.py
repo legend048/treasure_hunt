@@ -121,11 +121,11 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'treasure_hunt' / 'static'
-]
+    ]
 
-Media_URL = 'media/'
+MEDIA_URL = "/media/"
 # Media_ROOT = BASE_DIR / 'treasure_hunt' /'treasure_hunt' / 'media'
-Media_ROOT = os.path.join(BASE_DIR, 'treasure_hunt', 'treasure_hunt', 'media')
+MEDIA_ROOT = BASE_DIR / 'media' 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
