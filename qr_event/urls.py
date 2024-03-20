@@ -3,5 +3,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='index')
+    path('', views.join, name='join'),
+    path('home/<str:event_code>', views.home, name='home')
 ]

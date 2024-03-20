@@ -1,0 +1,9 @@
+{%extends 'main.html'%}
+{%block content%}
+<h2>home</h2>
+<form action="/qr/" method="post">
+    {% csrf_token %}
+    <input type="text" name="event_code" placeholder="event code">
+    <input type="submit" value="login">
+</form>
+{%endblock%}
