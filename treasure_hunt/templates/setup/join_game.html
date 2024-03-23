@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Join the Game</title>
+</head>
+<body>
+    <h1>Join the Game</h1>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        <label for="game_id">Game ID:</label><br>
+        <input type="text" id="game_id" name="game_id" required><br>
+        <button type="submit">Join Game</button>
+    </form>
+</body>
+</html>
